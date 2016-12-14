@@ -70,10 +70,7 @@ public class MainView extends BaseView {
 
             enemyFish.add(smallPlane);
         }
-        for(int i = 0; i < MyFish.RightFish.sumCount; ++i){
-            MyFish.RightFish rightFish = (MyFish.RightFish) factory.createRightFish(getResources());
-            enemyFish.add(rightFish);
-        }
+
         for(int i = 0; i < MiddleFish.sumCount; ++i){
             MiddleFish middleFish = (MiddleFish) factory.createMiddleFish(getResources());
             enemyFish.add(middleFish);
@@ -152,12 +149,7 @@ public class MainView extends BaseView {
                 }
             }
             //初始化中型敌机
-            else if(obj instanceof MyFish.RightFish){
-                if(!obj.isAlive()){
-                    obj.initial(speedTime,0,0);
-                    break;
-                }
-             }
+
             else if(obj instanceof MiddleFish){
                 if(!obj.isAlive()){
                     obj.initial(speedTime,0,0);

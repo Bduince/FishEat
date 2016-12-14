@@ -17,9 +17,7 @@ public class GameObjectFactory {
     public GameObject createSmallPlane(Resources resources){
         return new SmallFish(resources);
     }
-    public GameObject createRightFish(Resources resources){
-        return new MyFish.RightFish(resources);
-    }
+
     //创建玩家飞机的方法
     public GameObject createMyFish(Resources resources){
         return new MyFish(resources);
